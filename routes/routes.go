@@ -8,5 +8,6 @@ import (
 func HandleRequests() {
 	r := gin.Default()
 	r.GET("/alunos", controllers.ExibeTodosAlunos) // Aqui definimos que toda requisão GET feita para o endpoint: /alunos, irá responder com a função "ExibeTodosAlunos", nos devolvendo o código 200 e a mensagem JSON: "id":"1" e "nome":"Anderson Roberto", na URL: http://localhost:8080/alunos
+	r.GET("/:nome", controllers.Saudacao)          //Aqui definimos mais uma requisição GET, sendo específicado o endpoint "/:nome" que tem a possibilidade de ser alterado e o responsável por essa requisição GET é o controllers."Saudacao".
 	r.Run()
 }
