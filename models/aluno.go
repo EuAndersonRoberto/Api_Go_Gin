@@ -9,4 +9,4 @@ type Aluno struct {
 	RG         string `json:"rg"`
 }
 
-var Alunos []Aluno //Aqui criamos uma variável Alunos que comtém um slice da struct "Aluno".
+//var Alunos []Aluno //Aqui criamos uma variável Alunos que comtém um slice da struct "Aluno".
